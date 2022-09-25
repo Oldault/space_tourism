@@ -4,9 +4,10 @@
   width: 100%;
   height: 100%;
   position: absolute;
-  background: black url(../assets/home/background-home-desktop2.jpg) no-repeat center;
+  background: black no-repeat center;
   background-size: cover;
-  background-image: linear-gradient(rgba(0, 0, 0, 0.5),rgba(0, 0, 0, 0.5)), url(../assets/home/background-home-desktop3.jpg);
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url(../assets/home/background-home-desktop3.jpg);
 }
 
 .home_text {
@@ -23,7 +24,7 @@
   position: relative;
   z-index: 1;
   width: 550px;
-  font-family: 'Bellefair', serif;
+  font-family: "Bellefair", serif;
 }
 
 .uppercase_text {
@@ -48,7 +49,7 @@
   border: none;
   font-size: 40px;
   text-decoration: solid;
-  font-family: 'Bellefair', serif;
+  font-family: "Bellefair", serif;
   transition: all 0.3s ease-out;
 }
 

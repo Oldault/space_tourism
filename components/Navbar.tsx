@@ -19,27 +19,37 @@ const Navbar = () => {
           <ul className="navText">
             <li>
               <Link href="/">
-                <a>00 <span>HOME</span></a>
+                <a>
+                  00 <span>HOME</span>
+                </a>
               </Link>
             </li>
             <li>
               <Link href="/destination">
-                <a>01 <span>DESTINATION</span></a>
+                <a>
+                  01 <span>DESTINATION</span>
+                </a>
               </Link>
             </li>
             <li>
               <Link href="/crew">
-                <a>02 <span>CREW</span></a>
+                <a>
+                  02 <span>CREW</span>
+                </a>
               </Link>
             </li>
             <li>
               <Link href="/technology">
-                <a>03 <span>TECHNOLOGY</span></a>
+                <a>
+                  03 <span>TECHNOLOGY</span>
+                </a>
               </Link>
             </li>
             <li>
               <Link href="/about">
-                <a>04 <span>ABOUT</span></a>
+                <a>
+                  04 <span>ABOUT</span>
+                </a>
               </Link>
             </li>
           </ul>

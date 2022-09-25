@@ -2,6 +2,7 @@ import type { NextPage } from "next";
 import Head from "next/head";
 import Image from "next/image";
 import styles from "../styles/Home.module.css";
+import Link from "next/link";
 
 const Home: NextPage = () => {
   return (
@@ -27,7 +28,11 @@ const Home: NextPage = () => {
             </p>
           </div>
           <div className={styles.explore_button}>
-            <button className={styles.button}><h5>Explore</h5></button>
+            <Link href="/destination">
+              <button className={styles.button}>
+                <h5>Explore</h5>
+              </button>
+            </Link>
           </div>
         </div>
       </main>
