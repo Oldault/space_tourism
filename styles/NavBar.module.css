@@ -1,0 +1,50 @@
+.nav_bar {
+    position: fixed;
+    top: 30px;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    align-items: center;
+    height: 100px;
+    color: white;
+    z-index: 1;
+}
+
+.logo {
+    margin: 0 64px;
+}
+
+.black_bar {
+    position: absolute;
+    left: 176px;
+    width: 42%;
+    height: 1px;
+    color: hsl(225, 14%, 25%, 1);
+    background-color: hsl(225, 14%, 25%, 1);
+    border: 2px solid hsl(225, 14%, 25%, 1);
+    border-radius: 10%;
+}
+
+.main_nav {
+    height: 100px;
+    width: 50%;
+    background-color: hsl(225, 14%, 16%, 0.2);
+    backdrop-filter: blur(6px);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.nav_destinations ul {
+    display: flex;
+    flex-wrap: nowrap;
+}
+
+.nav_destinations li {
+    margin: 0px 14px;
+}
+
+
+/* .nav_destinations li span {
+    letter-spacing: 4px;
+} */
