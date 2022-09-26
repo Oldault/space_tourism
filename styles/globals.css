@@ -84,6 +84,14 @@ h6 {
   list-style-type: none;
 }
 
+.dot {
+  height: 15px;
+  width: 15px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+}
+
 @media (prefers-color-scheme: dark) {
   html {
     color-scheme: dark;

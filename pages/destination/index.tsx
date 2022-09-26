@@ -2,8 +2,10 @@ import Router from "next/router";
 import styles from "../../styles/Destinations.module.css";
 import data from "../../data.json";
 import Image from "next/image";
+import moon from "../../assets/destination/image-moon.png"
 
 const dest = data.destinations[0];
+console.log(dest.images.png)
 
 const Destination = () => {
   return (
@@ -16,7 +18,7 @@ const Destination = () => {
             </h5>
           </div>
           <div className={styles.des_planet}>
-            <img src={dest.images.png} alt="planet" />
+            <Image src={moon}/>
           </div>
         </div>
         <div className={styles.des_right}>
