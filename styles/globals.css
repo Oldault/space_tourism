@@ -92,6 +92,16 @@ h6 {
   display: inline-block;
 }
 
+.round {
+  height: 75px;
+  width: 75px;
+  border-radius: 50%;
+  font-size: 22px;
+  border: 2px solid white;
+  color: #ffffff;
+  background-color: #00000000;
+}
+
 @media (prefers-color-scheme: dark) {
   html {
     color-scheme: dark;

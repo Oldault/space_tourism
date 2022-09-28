@@ -29,7 +29,7 @@ const Crew = () => {
         </div>
       </div>
       <div className={styles.crew_img}>
-        <Image src={man} />
+        <Image src={man} alt="man" />
       </div>
     </div>
   );
