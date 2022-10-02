@@ -1,13 +1,15 @@
 import Router from "next/router";
 import styles from "../../styles/Destinations.module.css";
-import data from "../../data.json";
+import data from "../../data.js";
 import Image from "next/image";
-import moon from "../../assets/destination/image-moon.png"
+import { useState } from "react";
 
-const dest = data.destinations[0];
-console.log(dest.images.png)
 
 const Destination = () => {
+
+  const [position, setPosition] = useState(0);
+  const dest = data.destinations[position];
+
   return (
     <div className={styles.container}>
       <div className={styles.des_main}>
@@ -18,20 +20,20 @@ const Destination = () => {
             </h5>
           </div>
           <div className={styles.des_planet}>
-            <Image src={moon}/>
+            <Image src={dest.images.png} alt="planet"/*  className="lineUp" *//>
           </div>
         </div>
         <div className={styles.des_right}>
           <div className={styles.des_planet_nav}>
             <ul className="navText">
-              <li>MOON</li>
-              <li>MARS</li>
-              <li>EUROPA</li>
-              <li>TITAN</li>
+              <li onClick={() => setPosition(0)}>MOON</li>
+              <li onClick={() => setPosition(1)}>MARS</li>
+              <li onClick={() => setPosition(2)}>EUROPA</li>
+              <li onClick={() => setPosition(3)}>TITAN</li>
             </ul>
           </div>
           <div className={styles.des_main_text}>
-            <h1>{dest.name}</h1>
+            <h1 /* className="lineDown" */>{dest.name}</h1>
             <p>{dest.description}</p>
           </div>
           <div className={styles.des_sup_info}>

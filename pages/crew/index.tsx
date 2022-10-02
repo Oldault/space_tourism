@@ -1,11 +1,15 @@
 import styles from "../../styles/Crew.module.css";
-import data from "../../data.json";
-import man from "../../assets/crew/image-douglas-hurley.png";
+import data from "../../data.js";
 import Image from "next/image";
+import { useState } from "react";
 
-const crew = data.crew[0];
 
 const Crew = () => {
+
+  const [position, setPosition] = useState(0);
+  const crew = data.crew[position];
+
+
   return (
     <div className={styles.container}>
       <div className={styles.crew_main}>
@@ -21,15 +25,15 @@ const Crew = () => {
             <p>{crew.bio}</p>
           </div>
           <div className={styles.crew_radio}>
-            <span className="dot"></span>
-            <span className="dot"></span>
-            <span className="dot"></span>
-            <span className="dot"></span>
+            <span className="dot" onClick={() => setPosition(0)}></span>
+            <span className="dot" onClick={() => setPosition(1)}></span>
+            <span className="dot" onClick={() => setPosition(2)}></span>
+            <span className="dot" onClick={() => setPosition(3)}></span>
           </div>
         </div>
       </div>
       <div className={styles.crew_img}>
-        <Image src={man} alt="man" />
+        <Image src={crew.images.png} alt="man" />
       </div>
     </div>
   );

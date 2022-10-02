@@ -1,11 +1,13 @@
 import styles from "../../styles/Technologies.module.css";
-import data from "../../data.json";
-import rocket from "../../assets/technology/image-launch-vehicle-portrait.jpg";
+import data from "../../data.js";
 import Image from 'next/image';
-
-const tech = data.technology[0];
+import { useState } from "react";
 
 const Technology = () => {
+
+  const [position, setPosition] = useState(0);
+  const tech = data.technology[position];
+
   return (
     <div className={styles.container}>
       <div className={styles.tech_main}>
@@ -17,9 +19,9 @@ const Technology = () => {
           </div>
           <div className={styles.tech_main_text}>
             <div className={styles.tech_buttons}>
-                <button className="round">1</button>
-                <button className="round">2</button>
-                <button className="round">3</button>
+                <button className="round" onClick={() => setPosition(0)}>1</button>
+                <button className="round" onClick={() => setPosition(1)}>2</button>
+                <button className="round" onClick={() => setPosition(2)}>3</button>
             </div>
             <div className={styles.tech_text}>
                 <h6>THE TERMINOLOGY...</h6>
@@ -30,7 +32,7 @@ const Technology = () => {
         </div>
       </div>
       <div className={styles.tech_img}>
-        <Image src={rocket} alt="rocket" />
+        <Image src={tech.images.portrait} alt="rocket" />
       </div>
     </div>
   );
