@@ -20,7 +20,7 @@ const Destination = () => {
             </h5>
           </div>
           <div className={styles.des_planet}>
-            <Image src={dest.images.png} alt="planet"/*  className="lineUp" *//>
+            <Image src={dest.images.png} alt="planet" className="lineUp"/>
           </div>
         </div>
         <div className={styles.des_right}>
@@ -33,7 +33,7 @@ const Destination = () => {
             </ul>
           </div>
           <div className={styles.des_main_text}>
-            <h1 /* className="lineDown" */>{dest.name}</h1>
+            <h1 className="lineDown">{dest.name}</h1>
             <p>{dest.description}</p>
           </div>
           <div className={styles.des_sup_info}>
