@@ -9,7 +9,7 @@ const Technology = () => {
   const tech = data.technology[position];
 
   return (
-    <div className={styles.container}>
+    <div className={styles.container} key={tech.name}>
       <div className={styles.tech_main}>
         <div className={styles.tech_left}>
           <div className={styles.tech_pick}>
@@ -32,7 +32,7 @@ const Technology = () => {
         </div>
       </div>
       <div className={styles.tech_img}>
-        <Image src={tech.images.portrait} alt="rocket" />
+        <Image src={tech.images.portrait} alt="rocket" className="fadeIn"/>
       </div>
     </div>
   );

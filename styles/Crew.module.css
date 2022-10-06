@@ -21,7 +21,7 @@
 
 .crew_left {
   height: 500px;
-  max-width: 600px;
+  max-width: 650px;
   margin-top: 100px;
   display: flex;
   flex-direction: column;
@@ -40,7 +40,7 @@
 }
 
 .crew_radio {
-    width: 160px;
+    width: 220px;
     display: flex;
     justify-content: space-between;
 }

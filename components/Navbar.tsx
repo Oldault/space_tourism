@@ -18,11 +18,11 @@ const Navbar = () => {
       <div className={styles.main_nav}>
         <div className={styles.nav_destinations}>
           <style jsx>{`
-            .navText {
-              color: red;
+            .nav_destinations li:hover {
+              border-bottom: 6px solid #ffffff3d;
             }
-            .active::after {
-              content: "(current page)";
+            .active {
+              border-bottom: 4px #ffffff solid;
             }
           `}</style>
           <ul className="navText">

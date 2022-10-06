@@ -3,15 +3,20 @@ import styles from "../../styles/Destinations.module.css";
 import data from "../../data.js";
 import Image from "next/image";
 import { useState } from "react";
-
+import { useRouter } from "next/router";
 
 const Destination = () => {
+  const router = useRouter();
+  const currentRoute = router.pathname;
 
   const [position, setPosition] = useState(0);
+  const [animation, setAnimation] = useState(0);
   const dest = data.destinations[position];
+  // I'm gonna fuck you in the ass tonight
 
+  // I love cum
   return (
-    <div className={styles.container}>
+    <div className={styles.container} key={dest.name}>
       <div className={styles.des_main}>
         <div className={styles.des_left}>
           <div className={styles.des_pick}>
@@ -20,7 +25,7 @@ const Destination = () => {
             </h5>
           </div>
           <div className={styles.des_planet}>
-            <Image src={dest.images.png} alt="planet" className="lineUp"/>
+            <Image src={dest.images.png} alt="planet" className="lineUp" />
           </div>
         </div>
         <div className={styles.des_right}>

@@ -37,6 +37,16 @@
 
 .des_planet_nav ul li {
   margin-right: 20px;
+  padding-bottom: 6px;
+  border-bottom: 4px rgba(255, 255, 255, 0) solid;
+}
+
+.des_planet_nav ul li:hover {
+  border-bottom: 4px #ffffff3d solid;
+}
+
+.des_planet_nav ul li:active {
+  border-bottom: 4px #ffffff solid;
 }
 
 .des_main_text p {

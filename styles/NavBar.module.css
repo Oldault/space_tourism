@@ -69,13 +69,9 @@
   text-decoration: none;
 }
 
-.nav_destinations li:hover {
+/* .nav_destinations li:hover {
   border-bottom: 6px solid #ffffff3d;
-}
-
-.nav_destinations li::after {
-  border-bottom: 6px solid #ffffff;
-}
+} */
 
 /* .nav_destinations li span {
     letter-spacing: 4px;
