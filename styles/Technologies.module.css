@@ -4,8 +4,8 @@
   position: absolute;
   background: black no-repeat center;
   background-size: cover;
-  background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.5)),
-    url(../assets/technology/background-technology-desktop.jpg);
+  background-image: linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.9)),
+    url(../assets/technology/2.jpg);
 }
 
 .tech_pick span {

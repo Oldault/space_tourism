@@ -6,8 +6,8 @@
   position: absolute;
   background: black no-repeat center;
   background-size: cover;
-  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
-    url(../assets/home/background-home-desktop3.jpg);
+  background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+    url(../assets/home/1.jpg);
 }
 
 .home_text {

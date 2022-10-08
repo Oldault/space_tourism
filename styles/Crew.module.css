@@ -4,8 +4,8 @@
   position: absolute;
   background: black no-repeat center;
   background-size: cover;
-  background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.5)),
-    url(../assets/crew/background-crew-desktop.jpg);
+  background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.9)),
+    url(../assets/crew/5.jpg);
 }
 
 .crew_pick span {

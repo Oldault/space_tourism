@@ -4,8 +4,8 @@
   position: absolute;
   background: black no-repeat center;
   background-size: cover;
-  background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.5)),
-    url(../assets/destination/background-destination-desktop.jpg);
+  background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.85)),
+    url(../assets/destination/4.jpg);
 }
 
 .des_pick span {
