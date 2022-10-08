@@ -11,7 +11,7 @@ const Crew = () => {
 
 
   return (
-    <div className={styles.container}>
+    <div className={styles.container} key={crew.name}>
       <div className={styles.crew_main}>
         <div className={styles.crew_left}>
           <div className={styles.crew_pick}>
@@ -20,9 +20,9 @@ const Crew = () => {
             </h5>
           </div>
           <div className={styles.crew_main_text}>
-            <h4>{crew.role}</h4>
-            <h3>{crew.name}</h3>
-            <p>{crew.bio}</p>
+            <h4 className="fadeIn">{crew.role}</h4>
+            <h3 className="fromLeft2">{crew.name}</h3>
+            <p className="fadeInD">{crew.bio}</p>
           </div>
           <div className={styles.crew_radio}>
             <span className="dot" onClick={() => setPosition(0)}></span>
@@ -33,7 +33,7 @@ const Crew = () => {
         </div>
       </div>
       <div className={styles.crew_img}>
-        <Image src={crew.images.png} alt="man" />
+        <Image src={crew.images.png} alt="man" className="fadeIn"/>
       </div>
     </div>
   );

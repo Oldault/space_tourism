@@ -69,9 +69,21 @@
   text-decoration: none;
 }
 
+.nav_destinations a.active {
+  border-bottom: 6px #ffffff solid;
+}
+.nav_destinations a.active:hover {
+  border-bottom: 6px #ffffff solid;
+}
+
+.nav_destinations a:hover {
+  border-bottom: 6px solid #ffffff3d;
+}
+
 /* .nav_destinations li:hover {
   border-bottom: 6px solid #ffffff3d;
-} */
+}
+ */
 
 /* .nav_destinations li span {
     letter-spacing: 4px;

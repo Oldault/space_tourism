@@ -54,5 +54,33 @@
 }
 
 .button:hover {
-  box-shadow: 0 0 10px 76px hsla(0, 0%, 33%, 0.5);
+  box-shadow: 0 0 2px 76px hsla(0, 0%, 60%, 0.7);
+}
+
+.button:active {
+  padding: 72px 48px;
+}
+
+
+
+/* ANIMATION */
+.fromLeft1{
+  animation: 3s anim-fromLeft1 ease-out ;
+}
+@keyframes anim-fromLeft1 {
+  0% {
+    opacity: 0;
+    transform: translateX(-80%);
+  }
+  20% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+    transform: translateX(0%);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0%);
+  }
 }

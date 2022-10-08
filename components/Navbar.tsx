@@ -17,37 +17,29 @@ const Navbar = () => {
       <div className={styles.black_bar}></div>
       <div className={styles.main_nav}>
         <div className={styles.nav_destinations}>
-          <style jsx>{`
-            .nav_destinations li:hover {
-              border-bottom: 6px solid #ffffff3d;
-            }
-            .active {
-              border-bottom: 4px #ffffff solid;
-            }
-          `}</style>
           <ul className="navText">
             <li>
-              <ActiveLink activeClassName="active" href="/">
+              <ActiveLink activeClassName={styles.active} href="/">
                 <a>00 HOME</a>
               </ActiveLink>
             </li>
             <li>
-              <ActiveLink activeClassName="active" href="/destination">
+              <ActiveLink activeClassName={styles.active} href="/destination">
                 <a>01 DESTINATION</a>
               </ActiveLink>
             </li>
             <li>
-              <ActiveLink activeClassName="active" href="/crew">
+              <ActiveLink activeClassName={styles.active} href="/crew">
                 <a>02 CREW</a>
               </ActiveLink>
             </li>
             <li>
-              <ActiveLink activeClassName="active" href="/technology">
+              <ActiveLink activeClassName={styles.active} href="/technology">
                 <a>03 TECHNOLOGY</a>
               </ActiveLink>
             </li>
             <li>
-              <ActiveLink activeClassName="active" href="/about">
+              <ActiveLink activeClassName={styles.active} href="/about">
                 <a>04 ABOUT</a>
               </ActiveLink>
             </li>

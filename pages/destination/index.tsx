@@ -10,11 +10,9 @@ const Destination = () => {
   const currentRoute = router.pathname;
 
   const [position, setPosition] = useState(0);
-  const [animation, setAnimation] = useState(0);
   const dest = data.destinations[position];
-  // I'm gonna fuck you in the ass tonight
 
-  // I love cum
+
   return (
     <div className={styles.container} key={dest.name}>
       <div className={styles.des_main}>
@@ -39,16 +37,16 @@ const Destination = () => {
           </div>
           <div className={styles.des_main_text}>
             <h1 className="lineDown">{dest.name}</h1>
-            <p>{dest.description}</p>
+            <p className="fadeInD2">{dest.description}</p>
           </div>
-          <div className={styles.des_sup_info}>
+          <div className={styles.des_sup_info} >
             <div className={styles.des_distance}>
               <p className="sHeading2">Avg. distance</p>
-              <h6>{dest.distance}</h6>
+              <h6 className="SlideIn1">{dest.distance}</h6>
             </div>
             <div className={styles.des_travel_time}>
               <p className="sHeading2">est. travel time</p>
-              <h6>{dest.travel}</h6>
+              <h6 className="SlideIn2">{dest.travel}</h6>
             </div>
           </div>
         </div>

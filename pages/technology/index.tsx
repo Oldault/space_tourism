@@ -25,8 +25,8 @@ const Technology = () => {
             </div>
             <div className={styles.tech_text}>
                 <h6>THE TERMINOLOGY...</h6>
-                <h3>{tech.name}</h3>
-                <p>{tech.description}</p>
+                <h3 className="fadeIn">{tech.name}</h3>
+                <p className="fadeIn">{tech.description}</p>
             </div>
           </div>
         </div>

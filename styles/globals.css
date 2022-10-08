@@ -131,11 +131,9 @@ h6 {
   }
 }
 
-
-
 /*line up test*/
 .lineUp {
-  animation: 5s anim-lineUp ease-out ;
+  animation: 5s anim-lineUp ease-out;
 }
 @keyframes anim-lineUp {
   0% {
@@ -156,7 +154,7 @@ h6 {
 }
 
 .lineDown {
-  animation: 3s anim-lineDown ease-out ;
+  animation: 3s anim-lineDown ease-out;
 }
 @keyframes anim-lineDown {
   0% {
@@ -177,12 +175,146 @@ h6 {
 }
 
 .fadeIn {
-  animation: fadeIn 2s ease-in;
+  animation: fadeIn 2.5s ease-in;
+  animation-fill-mode: both;
 }
 
 @keyframes fadeIn {
-  0% { opacity: 0; }
-  20% { opacity: 1; }
-  100% { opacity: 1; }
-  100% { opacity: 1; }
+  0% {
+    opacity: 0;
+  }
+  20% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.fadeInD {
+  animation: fadeInD 2s ease-out;
+  animation-fill-mode: both;
+}
+
+@keyframes fadeInD {
+  0% {
+    opacity: 0;
+  }
+  60% {
+    opacity: 0;
+  }
+  80% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+.fadeInD2 {
+  animation: fadeInD2 4s ease-out;
+  animation-fill-mode: both;
+}
+
+@keyframes fadeInD2 {
+  0% {
+    opacity: 0;
+  }
+  60% {
+    opacity: 0;
+  }
+  80% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+
+.SlideIn1{
+  animation: 3s anim-SlideIn1 ease-out ;
+  animation-fill-mode: both;
+  animation-delay: 3s;
+}
+@keyframes anim-SlideIn1 {
+  0% {
+    opacity: 0;
+    transform: translateX(-80%);
+  }
+  20% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+    transform: translateX(0%);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0%);
+  }
+}
+
+.SlideIn2{
+  animation: 3s anim-SlideIn2 ease-out ;
+  animation-fill-mode: both;
+  animation-delay: 4s;
+}
+@keyframes anim-SlideIn2 {
+  0% {
+    opacity: 0;
+    transform: translateX(-80%);
+  }
+  20% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+    transform: translateX(0%);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0%);
+  }
+}
+
+.fromLeft1{
+  animation: 4s anim-fromLeft1 ease-out ;
+}
+@keyframes anim-fromLeft1 {
+  0% {
+    opacity: 0;
+    transform: translateX(-80%);
+  }
+  20% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+    transform: translateX(0%);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0%);
+  }
+}
+
+.fromLeft2{
+  animation: 2s anim-fromLeft2 ease-out ;
+}
+@keyframes anim-fromLeft2 {
+  0% {
+    opacity: 0;
+    transform: translateX(-30%);
+  }
+  20% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+    transform: translateX(0%);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0%);
+  }
 }

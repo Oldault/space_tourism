@@ -17,10 +17,10 @@ const Home: NextPage = () => {
         <div className={styles.home_text}>
           <div className={styles.main_text}>
             <div className={styles.uppercase_text}>
-              <h5>So, you want to travel to</h5>
-              <h1>Space</h1>
+              <h5 className="fadeIn">So, you want to travel to</h5>
+              <h1 className="fromLeft1">Space</h1>
             </div>
-            <p>
+            <p className="fadeInD2">
               Let’s face it; if you want to go to space, you might as well
               genuinely go to outer space and not hover kind of on the edge of
               it. Well sit back, and relax because we’ll give you a truly out of
@@ -30,7 +30,7 @@ const Home: NextPage = () => {
           <div className={styles.explore_button}>
             <Link href="/destination">
               <button className={styles.button}>
-                <h5>Explore</h5>
+                <h5 >Explore</h5>
               </button>
             </Link>
           </div>
