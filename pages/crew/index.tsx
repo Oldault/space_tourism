@@ -33,7 +33,7 @@ const Crew = () => {
         </div>
       </div>
       <div className={styles.crew_img}>
-        <Image src={crew.images.png} alt="man" className="fadeIn"/>
+        <Image src={crew.images.png} alt="man" className="fadeIn" />
       </div>
     </div>
   );

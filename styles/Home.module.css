@@ -84,3 +84,19 @@
     transform: translateX(0%);
   }
 }
+
+@media only screen and (max-width: 950px) {
+  .container {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),url(../assets/home/background-home-tablet.jpg);
+    text-align: center;
+  }
+
+  .home_text{
+    flex-direction: column;
+    bottom: 10%;
+  }
+
+  .main_text {
+    margin-bottom: 80px;
+  }
+}

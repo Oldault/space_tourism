@@ -20,27 +20,37 @@ const Navbar = () => {
           <ul className="navText">
             <li>
               <ActiveLink activeClassName={styles.active} href="/">
-                <a>00 HOME</a>
+                <a>
+                  <span>00 </span>HOME
+                </a>
               </ActiveLink>
             </li>
             <li>
               <ActiveLink activeClassName={styles.active} href="/destination">
-                <a>01 DESTINATION</a>
+                <a>
+                  <span>01 </span>DESTINATION
+                </a>
               </ActiveLink>
             </li>
             <li>
               <ActiveLink activeClassName={styles.active} href="/crew">
-                <a>02 CREW</a>
+                <a>
+                  <span>02 </span>CREW
+                </a>
               </ActiveLink>
             </li>
             <li>
               <ActiveLink activeClassName={styles.active} href="/technology">
-                <a>03 TECHNOLOGY</a>
+                <a>
+                  <span>03 </span>TECHNOLOGY
+                </a>
               </ActiveLink>
             </li>
             <li>
               <ActiveLink activeClassName={styles.active} href="/about">
-                <a>04 ABOUT</a>
+                <a>
+                  <span>04 </span>ABOUT
+                </a>
               </ActiveLink>
             </li>
           </ul>
