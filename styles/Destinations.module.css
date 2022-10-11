@@ -43,13 +43,13 @@
   border-bottom: 4px rgba(255, 255, 255, 0) solid;
 }
 
-.des_planet_nav ul li:hover {
+/* .des_planet_nav ul li:hover {
   border-bottom: 4px #ffffff3d solid;
 }
 
 .des_planet_nav ul li:active {
   border-bottom: 4px #ffffff solid;
-}
+} */
 
 .des_main_text p {
   padding-bottom: 48px;
@@ -85,13 +85,12 @@
   }
 }
 
-
 @media only screen and (max-width: 950px) {
   .container {
     background-image: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)),
-    url(../assets/destination/background-destination-tablet.jpg);
+      url(../assets/destination/background-destination-tablet.jpg);
   }
-  
+
   .des_main {
     flex-direction: column;
     text-align: center;
@@ -120,7 +119,7 @@
     margin-top: 100px;
   }
 
-  .des_planet_nav ul{
+  .des_planet_nav ul {
     align-items: center;
     justify-content: center;
   }
